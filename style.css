@@ -1,0 +1,545 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #ebebeb;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#container{
+    width: 100%;
+    height: 100%;
+}
+
+#logo{
+    width: 250px;
+    height: 100%;
+    float: left;
+}
+
+#ikona{
+    width: 100%;
+    height: 100%;
+}
+
+#menu{
+    background-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    height: 90px;
+    text-align: left;
+    font-family: 'Space grotesk';
+    letter-spacing: 3px;
+    position: fixed;
+    z-index: 11;
+    transition: background-color 0.5s ease-in-out;
+}
+
+#menu2{
+    background-color: rgba(0, 0, 0, 0.85);
+    width: 250px;
+    height: 100%;
+    font-family: 'Space grotesk';
+    letter-spacing: 3px;
+    position: fixed;
+    right: 0;
+    opacity: 1;
+    z-index: 10;
+    padding-top: 90px;
+    transition: background-color 0.5s ease-in-out;
+    display: none;
+    transition: opacity 1s ease-in-out;
+}
+
+#linki2{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+#linki2 a{
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 30px;
+    line-height: 60px;
+}
+
+#linki2 a:hover{
+    text-decoration: underline;
+    text-decoration-color: rgb(194, 233, 0);
+}
+
+#linki{
+    width: 80%;
+    height: 100%;
+    float: left;
+    text-align: center;
+}
+
+#nic{
+    width: 150px;
+    float: left;
+    height: 100%;
+    padding-left: 70px;
+}
+
+#linki a{
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 30px;
+    line-height: 90px;
+}
+
+#linki a:hover{
+    text-decoration: underline;
+    text-decoration-color: rgb(194, 233, 0);
+}
+
+#content{
+    width: 100%;
+    height: 820px;
+    float: left;
+    margin: auto;
+    background-image: url("images/tlo2.jpg"), url("images/tlo1.jpeg"), url("images/tlo3.jpg");
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    transition: 5s;
+    animation: przejscie;
+    animation-direction: alternate;
+    animation-duration: 12s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes przejscie{
+    0% {
+        background-image: url("images/tlo2.jpg");
+    }
+    50%{
+        background-image: url("images/tlo3.jpg");
+    }
+    100%{
+        background-image: url("images/tlo1.jpeg");
+    }
+}
+
+#stopka{
+    background-color: #141414;
+    color: white;
+    width: 100%;
+    height: 50px;
+    float: left;
+    text-align: center;
+    line-height: 50px;
+    font-size: 10px;
+    letter-spacing: 3px;
+    font-family: 'Space grotesk';
+}
+
+::-webkit-scrollbar{
+    width: 0px;
+}
+
+#info{
+    width: 100%;
+    min-height: 800px;
+    float: left;
+    background-color: #141414;
+}
+
+.rez{
+    border: rgb(194, 233, 0) 1.5px solid;
+    border-radius: 50px;
+    padding: 5px 10px 5px 10px;
+}
+
+.rez:hover{
+    background-color: rgb(194, 233, 0);
+    color: black;
+    transition: background-color 0.3s;
+}
+
+#tekst{
+    color: white;
+    font-size: 30px;
+    font-family: 'Space grotesk';
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    line-height: 200px;
+    letter-spacing: 3px;
+ }
+
+ #box1{
+    background-color: rgb(27, 27, 27);
+    color: white;
+    width: 80%;
+    height: 150px;
+    border-radius: 20px;
+    margin: auto;
+ }
+
+ #box2{
+    background-color: rgb(27, 27, 27);
+    color: white;
+    width: 80%;
+    height: 150px;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 40px;
+ }
+
+ #box3{
+    background-color: rgb(27, 27, 27);
+    color: white;
+    width: 80%;
+    height: 150px;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 40px;
+ }
+
+#opis{
+    color: white;
+    font-size: 30px;
+    font-family: 'Space grotesk';
+    float: left;
+    width: 100%;
+    min-height: 90px;
+    line-height: 90px;
+    text-align: left;
+    padding-left: 50px;
+    box-sizing: border-box;
+    background-color: #141414;
+}
+
+.linia2{
+    width: 100%;
+    height: 3px;
+    float: left;
+    background-color: #141414;
+    box-shadow: 0px -1px 15px 10px #141414;
+    position: relative;
+    z-index: 5;
+}
+
+#jedenn{
+    width: 20%;
+    height: 100%;
+    float: left;
+    background-image: url("images/jeden.svg");
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#dwa{
+    float: left;
+    width: 80%;
+    height: 100%;
+    color: white;
+    font-size: 30px;
+    font-family: "Space grotesk";
+    text-align: justify;
+    padding: 15px;
+    padding-left: 0px;
+    display: table;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+#trzy{
+    width: 20%;
+    height: 100%;
+    float:left;
+    background-image: url("images/dwa.svg");
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#cztery{
+    float: left;
+    width: 80%;
+    height: 100%;
+    color: white;
+    font-size: 30px;
+    font-family: "Space grotesk";
+    justify-content: center;
+    text-align: justify;
+    padding: 15px;
+    padding-left: 0px;
+    box-sizing: border-box;
+    display: table;
+}
+
+#piec{
+    width: 20%;
+    height: 100%;
+    float:left;
+    background-image: url("images/trzy.svg");
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#szesc{
+    float: left;
+    width: 80%;
+    height: 100%;
+    color: white;
+    font-size: 30px;
+    font-family: "Space grotesk";
+    justify-content: center;
+    text-align: justify;
+    padding: 15px;
+    padding-left: 0px;
+    box-sizing: border-box;
+    display: table;
+}
+
+.dwaa{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.wrapper-menu {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: transform 330ms ease-out;
+    display: none;
+}
+  
+.wrapper-menu.open {
+    transform: rotate(-45deg);  
+}
+  
+.line-menu {
+    background-color: rgb(194, 233, 0);
+    border-radius: 5px;
+    width: 100%;
+    height: 6px;
+}
+  
+.line-menu.half {
+    width: 50%;
+}
+  
+.line-menu.start {
+    transition: transform 330ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+    transform-origin: right;
+}
+  
+.open .line-menu.start {
+    transform: rotate(-90deg) translateX(3px);
+}
+  
+.line-menu.end {
+    align-self: flex-end;
+    transition: transform 330ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+    transform-origin: left;
+}
+  
+.open .line-menu.end {
+    transform: rotate(-90deg) translateX(-3px);
+}
+
+#ajax{
+    width: 100%;
+    background-color: #ebebeb;
+    min-height: 120px;
+    float: left;
+    clear: both;
+    
+    line-height: 120px;
+    padding-top: 20px;
+    box-sizing: border-box;
+    margin: auto;
+    padding: auto;
+}
+
+#load{
+    background-color: rgb(194, 233, 0);
+    width: 80px;
+    height: 80px;
+    line-height: 20px;
+    margin: auto;
+    border-radius: 100%;
+    position: relative;
+    filter: drop-shadow(0 0 0.3rem black);
+    background-image: url("images/strzalka.svg");
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: bounce 3s infinite;
+}
+
+#load:hover{
+    cursor: pointer;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+}
+
+#ajax_text{
+    display: none;
+    width: 70%;
+    min-height: 100px;
+    padding-top: 20px;
+    float: left;
+    text-align: justify;
+    font-size: 20px;
+    font-family: "Space grotesk";
+    color: #ebebeb;
+    line-height: normal;
+    color: black;
+    float: left;
+    clear: both;
+    padding-bottom: 40px;
+    margin-left: 15%;
+}
+
+@media only screen and (max-width: 1900px){
+    #content{
+        transition: height 0s;
+    }
+}
+
+@media only screen and (max-width: 1800px){
+    #box1, #box2, #box3{
+        height: 220px;
+    }
+    #box1, #box2, #box3{
+        height: 220px;
+    }
+    #info{
+        height: 1050px;
+    }
+}
+
+@media only screen and (max-width: 1222px){
+    #box1{
+        height: 300px;
+    }
+    #box1, #box2, #box3{
+        height: 300px;
+    }
+    #info{
+        height: 1250px;
+    }
+}
+
+@media only screen and (max-width: 1205px) {
+    #content{
+        height: 750px;
+        transition: height 0s;
+    }
+    .wrapper-menu{
+        display: flex;   
+    }
+    #nic{
+        float: right;
+        box-sizing: border-box;
+        padding-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    #linki{
+        display: none;
+    }
+    .wrapper-menu{
+        display: flex;   
+    }
+    #nic{
+        float: right;
+        box-sizing: border-box;
+        padding-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 945px){
+    #opis{
+        line-height: normal;
+        padding-top: 20px;
+        box-sizing: border-box;
+    }
+}
+
+@media only screen and (max-width: 933px){
+    #box1, #box2{
+        height: 370px;
+    }
+    #dwa, #cztery, #szesc{
+        font-size: 25px;
+    }
+    #box3{
+        height: 260px;
+    }
+    #info{
+        height: 1350px;
+    }
+}
+
+@media only screen and (max-width: 880px){
+    #content{
+        height: 500px;
+    }
+    #opis{
+        text-align: center;
+        padding-left: 10px;
+    }
+}
+
+@media only screen and (max-width: 650px){
+    #content{
+        height: 450px;
+    }
+}
+
+@media only screen and (max-width: 550px){
+    #content{
+        height: 400px;
+    }
+}
+
+@media only screen and (max-width: 535px){
+    #box1, #box2{
+        height: 450px;
+    }
+    #box3{
+        height: 300px;
+    }
+    #info{
+        height: 1550px;
+    }
+    #dwa, #cztery, #szesc{
+        font-size: 24px;
+    }
+    #opis{
+        padding-left: 0px;
+    }
+} 

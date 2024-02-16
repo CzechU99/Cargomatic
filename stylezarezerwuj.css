@@ -1,0 +1,422 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #ebebeb;
+    font-family: "Space Grotesk";
+}
+
+#container{
+    width: 100%;
+    min-height: 100%;
+}
+
+#logo{
+    width: 250px;
+    height: 100%;
+    float: left;
+}
+
+#ikona{
+    width: 100%;
+    height: 100%;
+}
+
+#menu{
+    background-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    height: 90px;
+    text-align: left;
+    font-family: 'Space grotesk';
+    letter-spacing: 3px;
+    position: fixed;
+    z-index: 11;
+    transition: background-color 0.5s ease-in-out;
+}
+
+#menu2{
+    background-color: rgba(0, 0, 0, 0.85);
+    width: 250px;
+    height: 100%;
+    font-family: 'Space grotesk';
+    letter-spacing: 3px;
+    position: fixed;
+    right: 0;
+    opacity: 1;
+    z-index: 10;
+    padding-top: 90px;
+    transition: background-color 0.5s ease-in-out;
+    display: none;
+    transition: opacity 1s ease-in-out;
+}
+
+#linki2{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+#linki2 a{
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 30px;
+    line-height: 60px;
+}
+
+#linki2 a:hover{
+    text-decoration: underline;
+    text-decoration-color: rgb(194, 233, 0);
+}
+
+#linki{
+    width: 80%;
+    height: 100%;
+    float: left;
+    text-align: center;
+}
+
+#nic{
+    width: 150px;
+    float: left;
+    height: 100%;
+    padding-left: 70px;
+}
+
+#linki a{
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 30px;
+    line-height: 90px;
+}
+
+#linki a:hover{
+    text-decoration: underline;
+    text-decoration-color: rgb(194, 233, 0);
+}
+
+#content{
+    width: 100%;
+    min-height: 500px;
+    float: left;
+    margin: auto;
+    padding: auto;
+    display: table;
+    padding-bottom: 80px;
+}
+
+#stopka{
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 50px;
+    float: left;
+    text-align: center;
+    line-height: 50px;
+    font-size: 10px;
+    letter-spacing: 3px;
+    font-family: 'Space grotesk';
+    position: fixed;
+    bottom: 0;
+}
+
+::-webkit-scrollbar{
+    width: 0px;
+}
+
+.rez{
+    border: rgb(194, 233, 0) 1.5px solid;
+    border-radius: 50px;
+    padding: 5px 10px 5px 10px;
+}
+
+.rez:hover{
+    background-color: rgb(194, 233, 0);
+    color: black;
+    transition: background-color 0.3s;
+}
+
+#info{
+    width: 100%;
+    height: 250px;
+    background-color: black;
+    color: white;
+    font-size: 50px;
+    letter-spacing: 5px;
+    font-weight: bold;
+    line-height: 400px;
+    text-align: center;
+}
+
+#linia2{
+    width: 100%;
+    height: 3px;
+    float: left;
+    background-color: black;
+    box-shadow: 0px -1px 15px 10px black;
+    position: relative;
+    z-index: 5;
+}
+
+.wrapper-menu {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: transform 330ms ease-out;
+    display: none;
+}
+  
+.wrapper-menu.open {
+    transform: rotate(-45deg);  
+}
+  
+.line-menu {
+    background-color: rgb(194, 233, 0);
+    border-radius: 5px;
+    width: 100%;
+    height: 6px;
+}
+  
+.line-menu.half {
+    width: 50%;
+}
+  
+.line-menu.start {
+    transition: transform 330ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+    transform-origin: right;
+}
+  
+.open .line-menu.start {
+    transform: rotate(-90deg) translateX(3px);
+}
+  
+.line-menu.end {
+    align-self: flex-end;
+    transition: transform 330ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+    transform-origin: left;
+}
+  
+.open .line-menu.end {
+    transform: rotate(-90deg) translateX(-3px);
+}
+
+.car{
+    width: 60%;
+    min-height: 350px;
+    background-color: white;
+    padding: 20px;
+    margin: auto;
+    margin-top: 80px;
+    border-radius: 10px;
+    filter: drop-shadow(0 0 0.3rem black);
+}
+
+.zdjecie{
+    width: 30%;
+    height: 350px;
+    float: left;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+}
+
+.tech{
+    width: 50%;
+    height: 350px;
+    float: left;
+    box-sizing: border-box;
+    font-family: 'Space grotesk';
+    padding-left: 70px;
+    border-left: 5px solid #ebebeb;
+    padding-top: 65px;
+    border-right: 5px solid #ebebeb;
+}
+
+.rezerwacja{
+    width: 20%;
+    height: 350px;
+    float: left;
+    padding-left: 30px;
+    box-sizing: border-box;
+}
+
+.gora{
+    width: 100%;
+    height: 200px;
+    box-sizing: border-box;
+    padding-top: 80px;
+    font-size: 20px;
+    text-align: center;
+    float: left;
+}
+
+.bott{
+    width: 100%;
+    height: 100px;
+    float: left;
+    box-sizing: border-box;
+    background-color: rgb(194, 233, 0);
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    line-height: 100px;
+    transition: 0.5s;
+}
+
+.rezerwacja a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.bott:hover{
+    cursor: pointer;
+    scale: calc(1.05);
+    transition: 0.5s;
+}
+
+.bott a{
+    text-decoration: none;
+    color: black;
+}
+
+.dol{
+    margin-bottom: 80px;
+}
+
+.nazwa{
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.tech li{
+    list-style: none;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    margin: 0;
+    background-position: left center;
+    box-sizing: border-box;
+    padding-left: 25px;
+    line-height: 25px;
+}
+
+.tech ul{
+    padding: 0;
+}
+
+.nie{
+    background-color: lightgray;
+    pointer-events: none;
+}
+
+.nie:hover{
+    font-size: 20px;
+    transition: 0s;
+}
+
+#szukaj{
+    width: 60%;
+    height: 50px;
+    margin: auto;
+    text-align: right;
+    padding-top: 40px;
+    box-sizing: border-box;
+    padding-right: 100px;
+}
+
+#search{
+    width: 300px;
+    height: 20px;
+    border: 1px none black;
+    border-radius: 15px;
+    padding: 25px;
+    font-size: 20px;
+    font-family: 'Space grotesk';
+    box-sizing: border-box;
+    filter: drop-shadow(0 0 0.3rem black);
+}
+
+@media only screen and (max-width: 1440px){
+    .car{
+        width: 80%;
+    }
+    .zdjecie{
+        width: 40%;
+    }
+    .tech{
+        width: 40%;
+        padding-left: 20px;
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    #linki{
+        display: none;
+    }
+    .wrapper-menu{
+        display: flex;   
+    }
+    #nic{
+        float: right;
+        box-sizing: border-box;
+        padding-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 1080px){
+    .car{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 850px){
+    .car{
+        width: 60%;
+        min-height: 500px;
+    }
+    .zdjecie{
+        width: 100%;
+        margin: auto;
+        height: 200px;
+    }
+    .tech{
+        border-left: none;
+        width: 50%;
+        float: left;
+        height: 300px;
+        box-sizing: border-box;
+    }
+    .rezerwacja{
+        width: 50%;
+        float: left;
+        height: 300px;
+    }
+    .gora{
+        height: 100px;
+        padding-top: 70px;
+        float: left;
+        box-sizing: border-box;
+    }
+    .bott{
+        float: left;
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (max-width: 650px){
+    .car{
+        width: 80%;
+    }
+    .tech{
+        padding-left: 0px;
+        padding-right: 10px;
+    }
+}

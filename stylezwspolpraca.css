@@ -1,0 +1,491 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Space Grotesk';
+    background-color: white;
+}
+
+#container{
+    width: 100%;
+    height: 100%;
+}
+
+#logo{
+    width: 250px;
+    height: 100%;
+    float: left;
+}
+
+#ikona{
+    width: 100%;
+    height: 100%;
+}
+
+#menu{
+    background-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    height: 90px;
+    text-align: left;
+    font-family: 'Space grotesk';
+    letter-spacing: 3px;
+    position: fixed;
+    z-index: 11;
+    transition: background-color 0.5s ease-in-out;
+}
+
+#menu2{
+    background-color: rgba(0, 0, 0, 0.85);
+    width: 250px;
+    height: 100%;
+    font-family: 'Space grotesk';
+    letter-spacing: 3px;
+    position: fixed;
+    right: 0;
+    opacity: 1;
+    z-index: 10;
+    padding-top: 90px;
+    transition: background-color 0.5s ease-in-out;
+    display: none;
+    transition: opacity 1s ease-in-out;
+}
+
+#linki2{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+#linki2 a{
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 30px;
+    line-height: 60px;
+}
+
+#linki2 a:hover{
+    text-decoration: underline;
+    text-decoration-color: rgb(194, 233, 0);
+}
+
+#linki{
+    width: 80%;
+    height: 100%;
+    float: left;
+    text-align: center;
+}
+
+#nic{
+    width: 150px;
+    float: left;
+    height: 100%;
+    padding-left: 70px;
+}
+
+#linki a{
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 30px;
+    line-height: 90px;
+}
+
+#linki a:hover{
+    text-decoration: underline;
+    text-decoration-color: rgb(194, 233, 0);
+}
+
+#content{
+    width: 100%;
+    float: left;
+    margin: auto;
+}
+
+#stopka{
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 50px;
+    float: left;
+    text-align: center;
+    line-height: 50px;
+    font-size: 10px;
+    letter-spacing: 3px;
+    font-family: 'Space grotesk';
+}
+
+::-webkit-scrollbar{
+    width: 0px;
+}
+
+.rez{
+    border: rgb(194, 233, 0) 1.5px solid;
+    border-radius: 50px;
+    padding: 5px 10px 5px 10px;
+}
+
+.rez:hover{
+    background-color: rgb(194, 233, 0);
+    color: black;
+    transition: background-color 0.3s;
+}
+
+#linia2{
+    width: 100%;
+    height: 3px;
+    float: left;
+    background-color: black;
+    box-shadow: 0px -1px 15px 10px black;
+    position: relative;
+    z-index: 5;
+}
+
+.wrapper-menu {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: transform 330ms ease-out;
+    display: none;
+}
+  
+.wrapper-menu.open {
+    transform: rotate(-45deg);  
+}
+  
+.line-menu {
+    background-color: rgb(194, 233, 0);
+    border-radius: 5px;
+    width: 100%;
+    height: 6px;
+}
+  
+.line-menu.half {
+    width: 50%;
+}
+  
+.line-menu.start {
+    transition: transform 330ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+    transform-origin: right;
+}
+  
+.open .line-menu.start {
+    transform: rotate(-90deg) translateX(3px);
+}
+  
+.line-menu.end {
+    align-self: flex-end;
+    transition: transform 330ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+    transform-origin: left;
+}
+  
+.open .line-menu.end {
+    transform: rotate(-90deg) translateX(-3px);
+}
+
+#start{
+    background-color: black;
+    width: 100%;
+    height: 270px;
+    background-color: black;
+    line-height: 400px;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#razem{
+    background-color: white;
+    width: 1050px;
+    height: 560px;
+    margin: auto;
+    padding-left: 70px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 100px;
+    text-align: justify;
+    font-size: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: none;
+}
+
+#lewo{
+    width: 260px;
+    float: left;
+    height: 300px;
+    margin-top: 80px;
+    box-sizing: border-box;
+    background-image: url('images/handshakejpg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    filter: drop-shadow(0 0 0.3rem black);
+}
+
+#prawo{
+    width: 720px;
+    float: left;
+    height: 100%;
+    padding-left: 80px;
+    box-sizing: border-box;
+    padding-right: 30px;
+}
+
+#dalej{
+    width: 1100px;
+    height: 1000px;
+    margin: auto;
+}
+
+.wspol{
+    margin-top: 40px;
+    height: 400px;
+    width: 1100px;
+    border-radius: 10px;
+}
+
+.lef{
+    width: 50%;
+    float: left;
+    height: 100%;
+    padding-left: 70px;
+    box-sizing: border-box;
+    padding-right: 30px;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 80px;
+}
+
+.img{
+    filter: drop-shadow(0 0 0.3rem black);
+}
+
+.padd{
+    padding: 30px;
+}
+
+.rig{
+    width: 50%;
+    float: left;
+    height: 100%;
+    padding-left: 70px;
+    box-sizing: border-box;
+    padding-right: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 80px;
+    border-radius: 10px;
+}
+
+.rig li{
+    font-size: 20px;
+}
+
+.lef li{
+    font-size: 20px;
+}
+
+.star{
+    padding-top: 50px;
+}
+
+.roz{
+    font-size: 30px;
+    font-weight: bold;
+    width: 100%;
+}
+
+#kolor{
+    background-color: white;
+    width: 100%;
+    min-height: 1250px;
+    margin-top: 100px;
+    display: table;
+}
+
+#inf{
+    width: 100%;
+    height: 50px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    line-height: 50px;
+    background-color: white;
+    text-align: center;
+    font-size: 20px;
+    float: left;
+}
+
+#poka{
+    width: 100%;
+    height: 50px;
+    float: left;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+
+#po{
+    width: 250px;
+    background-color: rgb(194, 233, 0);
+    text-align: center;
+    margin: auto;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+#po:hover{
+    cursor: pointer;
+}
+
+#tabelka{
+    float: left;
+    width: 100%;
+    font-size: 20px;
+    display: none;
+    margin-bottom: 50px;
+}
+
+#tabelka td{
+    padding: 10px;    
+}
+
+#tabelka table{
+    margin: 0 auto;    
+}
+
+.c14{
+    background-color: #ebebeb;
+}
+
+
+
+@media only screen and (max-width: 1250px){
+    #linki{
+        display: none;
+    }
+    .wrapper-menu{
+        display: flex;   
+    }
+    #nic{
+        float: right;
+        box-sizing: border-box;
+        padding-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 1180px) {
+    .wspol{
+        width: 450px;
+        height: 600px;
+        margin: auto;
+    }
+    .lef{
+        width: 100%;
+        height: 50%;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 20px;
+    }
+    .rig{
+        width: 100%;
+        height: 50%;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 20px;
+    }
+    #dalej{
+        width: 450px;
+        margin: auto;
+    }
+    #kolor{
+        height: 1800px;
+    }
+    .zmiana{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .roz{
+        width: 100%;
+        text-align: center;
+        height: 40px;
+    }
+    .las{
+        height: 200px;
+    }
+    .lass{
+        height: 250px;
+    }
+    .wys{
+        height: 450px;
+    }
+    .wyss{
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+
+    #razem{
+        width: 80%;
+        padding: 20px;
+        height: 400px;
+        display: table;
+        box-sizing: border-box;
+        justify-content: center;
+    }
+    #lewo{
+        display: none;
+    }
+    #prawo{
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 40px;
+        height: 300px;
+        padding-left: 30px;
+        display: table;
+        box-sizing: border-box;
+        justify-content: center;
+    }
+    #start{
+        line-height: normal;
+    }
+    #nap{
+        width: 90%;
+        height: 50px;
+        padding-top: 130px;
+        margin: auto;
+    }
+
+}
+
+@media only screen and (max-width: 630px) {
+
+    #inf{
+        line-height: normal;
+    }
+
+}
+
+@media only screen and (max-width: 580px) {
+
+    #prawo{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #nap{
+        font-size: 35px;
+    }
+
+}
